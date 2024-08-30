@@ -7,8 +7,14 @@ public class Main {
         Ponto p2= new Ponto(1.000000, 0.958308);
         Ponto p3= new Ponto(0.687735, 0.958308);
         //Testar largura do triangulo;
-        System.out.println(new Ponto(0.1, 0.2));
 
+        System.out.println(p1);
+        System.err.println(p2);
+        System.err.println(p3);
+
+        Triangulo t1 = new Triangulo(p1, p2, p3);
+
+        System.out.println(t1.largura());
     }
 }
 
